@@ -24,3 +24,17 @@ blogPosts.forEach(post => {
   blogContainer.appendChild(article);
 });
 
+document.getElementById("comment-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const comment = document.getElementById("comment").value;
+  const commentDiv = document.getElementById("comments");
+
+  const newComment = document.createElement("p");
+  newComment.innerHTML = `<strong>${name}:</strong> ${comment}`;
+  commentDiv.appendChild(newComment);
+
+  // Clear the form
+  document.getElementById("name").value = "";
+  document.getElementById("comment").value = "";
+});
