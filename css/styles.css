@@ -1,3 +1,19 @@
+header h1 {
+  animation: bounce 1.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
