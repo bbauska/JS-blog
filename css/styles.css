@@ -41,6 +41,17 @@ header nav a:hover {
 main {
   padding: 2rem;
 }
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+header nav a:hover {
+  color: #f39c12;
+  text-decoration: underline;
+}
 
 footer {
   text-align: center;
